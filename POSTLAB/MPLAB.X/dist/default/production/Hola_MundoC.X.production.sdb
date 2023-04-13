@@ -1,0 +1,332 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F887 ]
+[d frameptr 0 ]
+"43 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"55 C:\Users\pablo\MPLABXProjects\Hola_MundoC.X\Postlab_07.c
+[v _isr isr `II(v  1 e 1 0 ]
+"82
+[v _main main `(v  1 e 1 0 ]
+"102
+[v _map map `(ui  1 e 2 0 ]
+"107
+[v _setup setup `(v  1 e 1 0 ]
+"19 C:\Users\pablo\MPLABXProjects\Hola_MundoC.X\PWM_Library.c
+[v _PWM_config PWM_config `(v  1 e 1 0 ]
+"41
+[v _PWM_duty PWM_duty `(v  1 e 1 0 ]
+"55
+[v _PWM_manual PWM_manual `(v  1 e 1 0 ]
+"60 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h
+[v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
+"167
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"229
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+"291
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+"353
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+[s S24 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"483
+[s S33 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+[u S38 . 1 `S24 1 . 1 0 `S33 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES38  1 e 1 @11 ]
+[s S104 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+]
+"554
+[u S112 . 1 `S104 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES112  1 e 1 @12 ]
+"773
+[v _T2CON T2CON `VEuc  1 e 1 @18 ]
+"928
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @21 ]
+"942
+[v _CCP1CON CCP1CON `VEuc  1 e 1 @23 ]
+"1155
+[v _CCPR2L CCPR2L `VEuc  1 e 1 @27 ]
+"1169
+[v _CCP2CON CCP2CON `VEuc  1 e 1 @29 ]
+"1239
+[v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
+[s S57 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :4:2 
+`uc 1 ADCS 1 0 :2:6 
+]
+"1277
+[s S62 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 ADCS0 1 0 :1:6 
+`uc 1 ADCS1 1 0 :1:7 
+]
+[s S71 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[s S74 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_DONE 1 0 :1:1 
+]
+[u S77 . 1 `S57 1 . 1 0 `S62 1 . 1 0 `S71 1 . 1 0 `S74 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES77  1 e 1 @31 ]
+[s S197 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nRBPU 1 0 :1:7 
+]
+"1367
+[s S204 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+]
+[u S208 . 1 `S197 1 . 1 0 `S204 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES208  1 e 1 @129 ]
+"1417
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1479
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1541
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+"1603
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+[s S223 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+]
+"1719
+[u S231 . 1 `S223 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES231  1 e 1 @140 ]
+[s S171 . 1 `uc 1 SCS 1 0 :1:0 
+`uc 1 LTS 1 0 :1:1 
+`uc 1 HTS 1 0 :1:2 
+`uc 1 OSTS 1 0 :1:3 
+`uc 1 IRCF 1 0 :3:4 
+]
+"1883
+[s S177 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 IRCF0 1 0 :1:4 
+`uc 1 IRCF1 1 0 :1:5 
+`uc 1 IRCF2 1 0 :1:6 
+]
+[u S182 . 1 `S171 1 . 1 0 `S177 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES182  1 e 1 @143 ]
+"2042
+[v _PR2 PR2 `VEuc  1 e 1 @146 ]
+[s S242 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 VCFG0 1 0 :1:4 
+`uc 1 VCFG1 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 ADFM 1 0 :1:7 
+]
+"2992
+[u S248 . 1 `S242 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES248  1 e 1 @159 ]
+"3388
+[v _ANSEL ANSEL `VEuc  1 e 1 @392 ]
+"3450
+[v _ANSELH ANSELH `VEuc  1 e 1 @393 ]
+"3592
+[v _ADIF ADIF `VEb  1 e 0 @102 ]
+"4327
+[v _T0IF T0IF `VEb  1 e 0 @90 ]
+"4387
+[v _TMR2IF TMR2IF `VEb  1 e 0 @97 ]
+"46 C:\Users\pablo\MPLABXProjects\Hola_MundoC.X\Postlab_07.c
+[v _adc0 adc0 `i  1 e 2 0 ]
+[v _adc1 adc1 `i  1 e 2 0 ]
+[v _adc2 adc2 `i  1 e 2 0 ]
+"47
+[v _ondaPWM ondaPWM `uc  1 e 1 0 ]
+"48
+[v _valor_mapeado0 valor_mapeado0 `i  1 e 2 0 ]
+[v _valor_mapeado1 valor_mapeado1 `i  1 e 2 0 ]
+[v _valor_mapeado2 valor_mapeado2 `i  1 e 2 0 ]
+"82
+[v _main main `(v  1 e 1 0 ]
+{
+"99
+} 0
+"107
+[v _setup setup `(v  1 e 1 0 ]
+{
+"151
+} 0
+"102
+[v _map map `(ui  1 e 2 0 ]
+{
+"103
+[v map@nuevo_valor nuevo_valor `ui  1 a 2 22 ]
+"102
+[v map@valor valor `ui  1 p 2 12 ]
+[v map@rango_min rango_min `ui  1 p 2 14 ]
+[v map@rango_max rango_max `ui  1 p 2 16 ]
+[v map@nuevo_min nuevo_min `ui  1 p 2 18 ]
+[v map@nuevo_max nuevo_max `ui  1 p 2 20 ]
+"105
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 9 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 11 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 4 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 6 ]
+"30
+} 0
+"55 C:\Users\pablo\MPLABXProjects\Hola_MundoC.X\PWM_Library.c
+[v _PWM_manual PWM_manual `(v  1 e 1 0 ]
+{
+[v PWM_manual@ondaPWM ondaPWM `i  1 p 2 0 ]
+[v PWM_manual@valor_comparador valor_comparador `i  1 p 2 2 ]
+[v PWM_manual@pin pin `i  1 p 2 4 ]
+"63
+} 0
+"41
+[v _PWM_duty PWM_duty `(v  1 e 1 0 ]
+{
+[v PWM_duty@canal canal `i  1 p 2 0 ]
+[v PWM_duty@DutyCycle DutyCycle `i  1 p 2 2 ]
+"53
+} 0
+"19
+[v _PWM_config PWM_config `(v  1 e 1 0 ]
+{
+"20
+[v PWM_config@valPR2 valPR2 `i  1 a 2 4 ]
+"19
+[v PWM_config@canal canal `i  1 p 2 69 ]
+[v PWM_config@periodo_ms periodo_ms `f  1 p 4 71 ]
+"39
+} 0
+"43 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 68 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 67 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 59 ]
+"70
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+{
+[s S624 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+"13
+[s S629 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
+[u S632 . 4 `l 1 i 4 0 `d 1 f 4 0 `S624 1 fAsBytes 4 0 `S629 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S632  1 a 4 53 ]
+"12
+[v ___flmul@grs grs `ul  1 a 4 48 ]
+[s S701 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+"14
+[u S704 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S701 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S704  1 a 2 57 ]
+"10
+[v ___flmul@bexp bexp `uc  1 a 1 52 ]
+"11
+[v ___flmul@aexp aexp `uc  1 a 1 47 ]
+"9
+[v ___flmul@sign sign `uc  1 a 1 46 ]
+"8
+[v ___flmul@b b `d  1 p 4 33 ]
+[v ___flmul@a a `d  1 p 4 37 ]
+"205
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+{
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v __Umul8_16@word_mpld word_mpld `ui  1 a 2 4 ]
+"5
+[v __Umul8_16@product product `ui  1 a 2 2 ]
+"4
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
+[v __Umul8_16@multiplicand multiplicand `uc  1 p 1 4 ]
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 6 ]
+"60
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+{
+"21
+[v ___fldiv@grs grs `ul  1 a 4 27 ]
+"22
+[v ___fldiv@rem rem `ul  1 a 4 20 ]
+"20
+[v ___fldiv@new_exp new_exp `i  1 a 2 25 ]
+"19
+[v ___fldiv@aexp aexp `uc  1 a 1 32 ]
+"18
+[v ___fldiv@bexp bexp `uc  1 a 1 31 ]
+"16
+[v ___fldiv@sign sign `uc  1 a 1 24 ]
+"8
+[v ___fldiv@a a `d  1 p 4 7 ]
+[v ___fldiv@b b `d  1 p 4 11 ]
+"185
+} 0
+"55 C:\Users\pablo\MPLABXProjects\Hola_MundoC.X\Postlab_07.c
+[v _isr isr `II(v  1 e 1 0 ]
+{
+"78
+} 0
